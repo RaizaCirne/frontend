@@ -4,40 +4,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bikecraft</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Posicionamento - Exercício 1</title>
 </head>
 
 <body>
   <header class="header">
     <img class="header-logo-bikcraft" src="./img/bikcraft.svg" alt="Logo Bikcraft">
-    <ul>
-      <li class="header-lista">
-        <a class="header-ancora" href="">Sobre</a>
-      </li>
-      <li class="header-lista">
-        <a class="header-ancora" href="">Produtos</a>
-      </li>
-      <li class="header-lista">
-        <a class="header-ancora" href="">Lojas</a>
-      </li>
-      <li class="header-lista">
-        <a class="header-ancora" href="">Contato</a>
-      </li>
-    </ul>
+    <ul class="header-list">
+      <li class="header-list-item"><a class="header-list-link" href="#">Sobre</a></li>
+      <li class="header-list-item"><a class="header-list-link" href="#">Produtos</a></li>
+      <li class="header-list-item"><a class="header-list-link" href="#">Lojas</a></li>
+      <li class="header-list-item"><a class="header-list-link" href="#">Contato</a></li>
   </header>
 
-  <div class="grid">
-    <div class="headline">
-      <h1>Bicicletas Feitas a Mão</h1>
-      <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
+  <div class="content-grid">
+    <section class="content-first-section">
+      <h1>Bibicletas Feitas a Mão</h1>
+      <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios de marca.</p>
       <a href="#">Ver mais</a>
-    </div>
+    </section>
 
-    <div>
-      <img class="bike-image" src="./img/bicicleta.jpg" alt="Bicicleta">
-    </div>
+    <img class="content-image" src="./img/bicicleta.jpg" alt="Imagem Bibicleta">
+
+    <section>
+      <h2>Vantagens Bikcraft</h2>
+    </section>
+
+    <section>
+      <div>
+        <img src="./img/eletrica.svg" alt="Ícone Elétrica">
+        <p>Permite você viajar distâncias inimagináveis com a sua bike.</p>
+      </div>
+
+      <div>
+        <img src="./img/velocidade.svg" alt="Ícone Velocidade">
+        <p>A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
+      </div>
+
+      <div>
+        <img src="./img/rastreador.svg" alt="Ícone Rastreador">
+        <p>Rastreador e sistema anti-furto para garantir o seu sossego.</p>
+      </div>
+    </section>
   </div>
+
+  <footer>
+    <p>Bikcraft. Alguns Direitos Reservados.</p>
+  </footer>
 </body>
 
 </html>
