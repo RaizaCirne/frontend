@@ -41,8 +41,9 @@ body {
 
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 1200px;
+  grid-template-columns: 500px 500px;
+  justify-content: center;
+  /* width: 1200px; */
 
   margin: 0 auto;
 }
@@ -51,6 +52,26 @@ body {
   background-color: #fff;
 }
 
+.title {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.2rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ee2211;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 0.7rem 1.1rem;
+  border-radius: 4px;
+}
+
 .content-image {
-  width: 70%;
+  width: 100%;
 }
