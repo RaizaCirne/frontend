@@ -117,6 +117,27 @@ body {
   align-items: center;
 } */
 
+.content-diferenciais {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 2rem 0 2rem 2rem;
+}
+
+.content-diferenciais-image {
+  display: block;
+}
+
+.content-diferenciais-icons {
+  width: 60%;
+}
+
+span {
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
 .footer {
   background-color: #fff;
   padding: 2rem 0;
