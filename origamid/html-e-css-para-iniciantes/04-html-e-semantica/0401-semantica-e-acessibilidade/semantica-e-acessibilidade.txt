@@ -1,0 +1,34 @@
+HTML e Semântica
+- Semântica e Acessibilidade
+
+Semântica
+- Por qual motivo realmente devemos marcar o HTML com tags semânticas (h1, p) e não apenas com tags genéricas (div, span).
+
+- Acessibilidade
+ - Leitores de tela (JAWS, NVDA, VoiceOver) utilizam as tags para a navegação e compreensão do conteúdo. Interfaces de voz estão cada vez mais presentes.
+
+- Browsers e Funcionalidades
+ - Define um estilo padrão para o conteúdo, mesmo sem o CSS. Facilita a organização do conteúdo em browsers que oferecem modo leitura.
+
+- Indexadores e Máquina
+ - Facilita o trabalho de indexadores como o robô do Google a identificar o conteúdo do seu site. (Especulação).
+
+
+Acessibilidade
+- Pesquisa
+    - Desde 2009 a WebAIM vêm fazendo pesquisas com usuários de leitores de tela.
+    - https://webaim.org/projects/screenreadersurvey9/
+
+- Headings (h1, h2, h3)
+    - A navegação pelos cabeçalhos é um dos principais métodos utilizados para procurar conteúdo na página.
+
+- Landmarks (nav, main)
+    - Os pontos de referência (landmarks) das páginas são utilizadas por mais de 75% dos usuários para navegar pelo conteúdo.
+
+
+Com Semântica
+- Conteúdo marcado semanticamente, facilita a navegação por leitores de tela e o uso de funcionalidades extras dos browsers.
+
+Sem Semântica
+- Possui o mesmo estilo/visual que o exemplo anterior. Porém,diversos problemas surgem ao utilizar apenas tags genéricas.
+
