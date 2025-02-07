@@ -1,0 +1,8 @@
+CSS Propriedades
+Unidades
+
+rem
+- Unidade relativa ao tamanho da fonte do elemento raiz html. Na maioria dos browsers com configuração padrão 1rem = 16px.
+
+em
+- em é uma unidade relativa ao tamanho da fonte do elemento pai.

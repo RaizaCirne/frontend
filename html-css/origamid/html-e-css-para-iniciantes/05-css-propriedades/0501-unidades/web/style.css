@@ -1,0 +1,13 @@
+.px {
+  font-size: 32px;
+}
+
+/* em em relação ao elemento pai */
+.em {
+  font-size: 2em;
+}
+
+/* rem em relação a raíz */
+.rem {
+  font-size: 2rem;
+}
