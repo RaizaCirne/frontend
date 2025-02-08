@@ -1,0 +1,9 @@
+body {
+  margin: 0px;
+}
+
+div {
+  background: lightblue;
+  width: calc(100vw - 100px);
+  height: 100vh;
+}
