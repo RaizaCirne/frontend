@@ -1,0 +1,20 @@
+vh e vw
+- vh representa o tamanho da altura da tela visível (viewport height) e vw da largura (viewport width). 100vw = 100% da tela.
+
+Observação
+ - Antes do vh só existia a porcentagem. A porcentagem é problemática para definir o height, pois: height: 100%; significa 100% da altura do pai. A altura do pai sempre é definida pelo tamanho do conteúdo, então basicamente 100% de height não muda em nada.
+
+ - 100vh será 100% da altura da tela, independente da quantidade de conteúdo.
+
+calc
+- calc() é uma função de css que retorna um valor com base no cálculo efetuado entre os (). Podemos combinar unidades.
+
+ - calc(100vw / 3):
+    - Representa 1/3 da tela.
+
+ - calc(100% - 20px):
+    - Remove 20px de 100%.
+
+Outras Unidades
+  - Existem outras unidades, confira no link abaixo:
+    - https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
