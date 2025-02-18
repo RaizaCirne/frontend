@@ -1,0 +1,31 @@
+CSS Propriedades
+Pseudo Classes
+
+Estado
+- Permite definirmos o estilo de diferentes estados do elemento html.
+
+- :hover
+  - Mouse por cima.
+
+- :focus
+  - Elemento em foco, usando o teclado (tab).
+
+- :active
+  - Quando clicamos no elemento.
+
+- :visited
+  - Para links que já foram visitados.
+
+Seletores
+- :first-child
+  - Seleciona o primeiro elemento.
+
+- :last-child
+  - Seleciona o último elemento.
+
+- :nth-child(4)
+  - 4 (quarto elemento), even (pares), odd (ímpares), 3n (de 3 em 3).
+
+:not
+- O :not nega a seleção de um elemento específico.
+  - Lista com outras pseudo-classes: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
