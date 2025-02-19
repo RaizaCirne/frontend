@@ -1,0 +1,20 @@
+CSS Propriedades
+Pseudo Elements
+
+::before e ::after
+Os pseudo elements ::before e ::after criam elementos HTML com base no seletor.
+
+content
+- Definir um conteúdo para o elemento é essencial para ele existir, mesmo que o conteúdo esteja vazio.
+
+uso
+- São utilizados para decorarmos o conteúdo, com eles evitamos o uso de elementos desnecessários no HTML.
+
+
+::first-line e ::first-letter
+
+::first-line
+- Seleciona a primeira linha do conteúdo.
+
+::first-letter
+- Seleciona a primeira letra do conteúdo.
