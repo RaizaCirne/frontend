@@ -1,0 +1,8 @@
+Responsivo
+Grid
+
+- repeat(auto-fit)
+  - O repeat com auto-fit irá gerar o total de colunas que forem necessárias para preencher a área.
+
+- order
+  - É possível mudar a ordem visual dos elementos na tela. Importante a ordem semântica (leitura da tela), não é afetada pelo order.
