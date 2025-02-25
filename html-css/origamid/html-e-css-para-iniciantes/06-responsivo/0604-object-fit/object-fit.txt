@@ -1,0 +1,11 @@
+Responsivo
+Object Fit
+
+object-fit
+Preenche o elemento pai com a imagem, sem distorcer a mesma.
+
+- object-fit
+  - Funciona como o background-size. Contém valores como cover, contain, fill.
+
+- object-position
+  - Posiciona o objeto, indicando como ele deve ser cortado. top left, top center
