@@ -1,0 +1,38 @@
+JavaScript Completo ES6+
+A Linguagem
+
+A Linguagem
+Linguagem de programação interpretada.
+
+Aplicações
+
+- Front-end
+  - Manipulação do DOM, comunicação assíncrona com o back end e mais
+
+- Parte traseira
+  - Comunicação com banco de dados, manipulação de arquivos e mais (Node)
+
+- Jogos
+  - Geralmente se aproveita os benefícios do HTML5
+
+JAVASCRIPT
+não é Java, não é Java Script
+
+Sintaxe Básica
+    const nome = "André";
+
+    function somar(a, b) {
+      return a + b;
+    }
+
+    somar(2, 4);
+    // resultado 6
+
+
+
+Sintaxe Básica
+    const btn = document.querySelector('.btn');
+
+    btn.addEventListener('click', function() {
+      btn.classList.add('ativo');
+    });

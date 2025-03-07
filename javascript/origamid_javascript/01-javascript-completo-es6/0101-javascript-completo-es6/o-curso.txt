@@ -1,0 +1,122 @@
+JavaScript Completo ES6+
+O Curso
+
+O Curso
+- JavaScript Completo ES6+
+  - var, const, let, class, async, await, fetch, promise e mais
+
+- Pré-requisitos
+  - HTML/CSS
+
+- Ferramentas
+  - Visual Studio Code, Node.js, NPM e Git
+
+Animais Fantásticos
+https://origamid.github.io/animais-fantasticos/
+
+Nota
+
+- Introdução
+  - Sobre a linguagem e configuração do ambiente.
+
+- JavaScript para Iniciantes
+  - Dados, variáveis, operadores, booleanos, funções, objetos, arrays, loops e mais.
+
+- DOM para Iniciantes
+  - Início do projeto, selecione e manipule o dom, eventos, traversing e mais.
+
+Nota
+
+- Objetos
+  - Funções construtoras, protótipo, string, array, matemática, número, função, objeto.
+
+- Efeitos no DOM
+  - Módulos, bolha de eventos, setTimeout, formulários e mais.
+
+- JavaScript Assincrono
+  - Promises, Fetch (novo AJAX), JSON, API, HTTP, Async/Await e mais.
+
+Nota
+
+- Aulas
+  - Classe, construtor, obter, definir, estender e muito mais.
+
+- Mais JavaScript
+  - IIFE, função de fábrica, clojures, depuração, desestruturação, rest, iteráveis.
+
+- Expressão regular
+  - Principais padrões e métodos.
+
+Nota
+
+- Automação Front End
+  - CLI, NPM, ESLint, Webpack, Babel e Git.
+
+- Projeto Final
+  - Refatoração do projeto utilizando classes. Praticando com Git, ESLint e mais.
+
+- Deslizar
+  - Criação do plugin de slide.
+
+Pequeno e Simples
+    const btn = document.querySelector('.btn');
+
+    function activeButton() {
+      this.classList.add('active');
+    }
+
+    btn.addEventListener('click', activeButton);
+
+
+Pequeno e Complexo
+    export default function fetchBitcoin(url, target) {
+      fetch(url)
+        .then(response => response.json())
+        .then((bitcoin) => {
+          const btcPreco = document.querySelector(target);
+          btcPreco.innerText = (1000 / bitcoin.BRL.sell).toFixed(4);
+        }).catch(erro => console.log(Error(erro)));
+    }
+
+Grande e Complexo
+    export default class Countdown {
+      constructor(futureDate) {
+        this.futureDate = futureDate;
+      }
+      get _actualDate() {
+        return new Date();
+      }
+      get _futureDate() {
+        return new Date(this.futureDate);
+      }
+      get _timeStampDiff() {
+        return this._futureDate.getTime() - this._actualDate.getTime();
+      }
+      get days() {
+        return Math.floor(this._timeStampDiff / (24 * 60 * 60 * 1000));
+      }
+      get hours() {
+        return Math.floor(this._timeStampDiff / (60 * 60 * 1000));
+      }
+      get minutes() {
+        return Math.floor(this._timeStampDiff / (60 * 1000));
+      }
+      get seconds() {
+        return Math.floor(this._timeStampDiff / 1000);
+      }
+      get total() {
+        const days = this.days;
+        const hours = this.hours % 24;
+        const minutes = this.minutes % 60;
+        const seconds = this.seconds % 60;
+        return {
+          days,
+          hours,
+          minutes,
+          seconds,
+        }
+      }
+    }
+
+Iframe
+<iframe src="./javascript-engine/#/assincrono/" height="705" frameborder="0" allowfullscreen></iframe>

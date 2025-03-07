@@ -1,0 +1,53 @@
+JavaScript Completo ES6+
+VSCode, Node e Git
+
+- Ambiente
+  - Instalar o Node.js
+    - https://nodejs.org/en/
+
+  - Instalar o Git
+    - https://git-scm.com/downloads
+
+  - Instalar o Visual Studio Code
+    - https://code.visualstudio.com/
+
+- Visual Studio Code (Extensões)
+
+  - Tema Origamida
+    - https://marketplace.visualstudio.com/items?itemName=origamid.origamid-theme
+
+  - Servidor ao vivo e destaque de cores
+    - Extensões > Buscar > Instalar
+
+  - IBM Plex Mono
+    - https://fonts.google.com/specimen/IBM+Plex+Mono
+
+- Código do Visual Studio (Configuração)
+  - Arquivos > Preferências > Configurações (Win / Linux)
+  - Código > Preferências > Configurações (Mac)
+
+    {
+      "editor.fontFamily": "'IBM Plex Mono', Monaco, 'Courier New', monospace",
+      "editor.fontSize": 14,
+      "editor.lineHeight": 25,
+      "editor.tabSize": 2,
+      "editor.wordWrap": "on",
+      "workbench.colorTheme": "Origamid",
+      "workbench.startupEditor": "newUntitledFile",
+      "window.zoomLevel": 0,
+      "editor.colorDecorators": false,
+      "workbench.activityBar.visible": true,
+      "workbench.sideBar.location": "left",
+      "liveServer.settings.donotShowInfoMsg": true,
+    }
+
+- Console do Google Chrome
+  - Ctrl + Shift + J (Win) / Cmd + Opção + J (Mac)
+
+- Codificar Online
+
+  - Código Pen
+    - https://codepen.io/
+
+  - JSB em
+    - https://jsbin.com/?html,css,js,saída

@@ -1,0 +1,113 @@
+JavaScript para Iniciantes
+Variáveis
+
+- Antes de começarmos
+  - Criar um documento HTML (index.html)
+  - Criar um documento JavaScript (script.js)
+  - Linkar o script para html
+    - <script src="script.js"></script>
+
+- Variáveis
+  - Responsáveis ​​por salvar dados na memória.
+  - Inicia com a palavra var, let ou const
+
+        var nome = 'André';
+        let idade = 28;
+        const possuiFaculdade = true;
+
+
+- Evite repetições
+  - SECO (Não se repita)
+
+        var preco = 20;
+        var totalComprado = 5;
+        var precoTotal = preco * totalComprado;
+
+
+- Sintaxe
+  - Palavra chave varseguida do nome, sinal de igual e o valor.
+
+        var nome = 'André';
+        var idade = 28;
+        var possuiFaculdade = true;
+
+- Vírgula
+  - Utilize a vírgula para criar mais de uma variável, sem repetir a palavra chave var.
+
+        var nome = 'André',
+            idade = 28,
+            possuiFaculdade = true;
+
+- Sem valor
+  - Pode declarar ela e não considerar valor inicialmente.
+
+        var precoAplicativo;
+        // retorna undefined
+
+- Nome
+  - Os nomes podem iniciar com $, _, ou letras.
+    - Podem conter números, mas não iniciar com eles
+
+  - Maiúsculas e minúsculas
+    - nome é diferente de Nome
+
+  - Não utilize palavras reservadas
+    - https://www.w3schools.com/js/js_reserved.asp
+
+  - Caso de camelo
+    - É comum nomearmos assim: abrirModal
+
+- Nome
+        // Inválido
+        var §nome;
+        var function;
+        var 1possuiFaculdade;
+
+        // Válido
+        var $selecionar;
+        var _nome;
+        var possuiFaculdadeNoExterior;
+
+- Declarar
+  - Erro ao tentar utilizar uma variável que não foi declarada.
+
+        console.log(nome);
+        // retorna nome is not defined
+
+- Içamento
+  - São motivos para cima do código, porém o valor atribuído não é movido.
+
+        console.log(nome);
+        var nome = 'André';
+        // Retorna undefined
+
+        var profissao = 'Designer';
+        console.log(profissao);
+        // Retornar Designer
+
+- Mudar o valor atribuído
+  - É possível alterar os valores atribuídos às variáveis ​​declaradas com vare let. Porém não é possível modificar valores das declaradas comconst
+
+        var idade = 28;
+        idade = 29;
+
+        let preco = 50;
+        preco = 25;
+
+        const possuiFaculdade = true;
+        possuiFaculdade = false;
+        // Retorna um erro
+
+Exercício
+Dica rápida, frases (string) devem ser colocadas entre aspas (simples ou duplas) e números não levam aspas.
+
+// Declarar uma variável com o seu nome
+
+// Declarar uma variável com a sua idade
+
+// Declarar uma variável com a sua comida
+// favorita e não atribuir valor
+
+// Atribuir valor a sua comida favorita
+
+// Declarar 5 variáveis diferentes sem valores
