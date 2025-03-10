@@ -33,7 +33,7 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 const tom = "Tom";
 const firstTom = "Hanks";
 const secondTom = "Cruise";
-const myFavoriteTom = `${tom} ${firstTom}`;
+const myFavoriteTom = tom + " " + firstTom;
 // console.log(myFavoriteTom);
 
 /*
@@ -47,6 +47,8 @@ const myFavoriteTom = `${tom} ${firstTom}`;
 
 const programmingLanguage = "JavaScript";
 const js = programmingLanguage[0] + programmingLanguage[4];
+// const js = programmingLanguage.slice(0, 1) + programmingLanguage.slice(4, 5);
+// const js = `${programmingLanguage.slice(0, 1)}${programmingLanguage.slice(4,5)}`;
 // console.log(js);
 
 /*
@@ -59,6 +61,7 @@ const js = programmingLanguage[0] + programmingLanguage[4];
 
 const mozilla = "Mozilla Developer Network";
 const mdn = mozilla[0] + mozilla[8] + mozilla[18];
+// const mdn = mozilla.slice(0, 1) + mozilla.slice(8, 9) + mozilla.slice(18, 19);
 // console.log(mdn);
 
 /*
@@ -78,7 +81,7 @@ const mdn = mozilla[0] + mozilla[8] + mozilla[18];
 */
 
 let randomWord = "Araponga";
-// console.log(randomWord.length - 1);
+// console.log(randomWord[randomWord.length - 1]);
 
 /*
 09 - Comente o console.log acima, e,
@@ -126,7 +129,7 @@ const winterMessage = "o inverno está chegando";
 */
 
 const harryPotterAuthor = "J.K. Rowling";
-// console.log(harryPotterAuthor[0] + harryPotterAuthor[1] + harryPotterAuthor[2]);
+// console.log(harryPotterAuthor.slice(0, 4));
 
 /*
 14 - Comente o console.log acima, e,
@@ -137,7 +140,7 @@ const harryPotterAuthor = "J.K. Rowling";
 */
 
 const bestMovie = 'E o Oscar de melhor filme vai para: "La la land"!';
-const realBestMovie = 'E o Oscar de melhor filme vai para: "Moonlight"!';
+const realBestMovie = bestMovie.replace("La la land", "Moonlight");
 // console.log(realBestMovie);
 
 /*
@@ -203,8 +206,8 @@ const allEpisodes = "O nº de episódios é: " + episodes;
 - Não use template strings.
 */
 
-// const bookMessage = '\'O Conto da Aia\' é um dos livros mais vendidos da década.'
-// console.log(bookMessage)
+const bookMessage = '\'O Conto da Aia\' é um dos livros mais vendidos da década.';
+// console.log(bookMessage);
 
 /*
 21 - Comente o console.log acima (e a const bookMessage caso não tenha descoberto a resolução), e,
@@ -217,8 +220,9 @@ const allEpisodes = "O nº de episódios é: " + episodes;
 - Exiba a "newName" no console;
 */
 
-// NÃO CONSEGUI
 const name = "walter white";
+let newName = name[0].toUpperCase() + name.slice(1, 6) + " " + name[7].toUpperCase() + name.slice(8);
+// console.log(newName);
 
 /*
 22 - Comente o console.log acima, e,
@@ -230,4 +234,5 @@ const name = "walter white";
 - Exiba a "newName" no console;
 */
 
-// NÃO CONSEGUI
+newName = `${name[0].toUpperCase()}${name.slice(1,6)} ${name[7].toUpperCase()}${name.slice(8)}`;
+console.log(newName);
