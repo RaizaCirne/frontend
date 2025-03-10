@@ -17,8 +17,8 @@ const crazyOperation = 5 * (10 - 3) ** 2;
 
 // 1º parênteses
 // 2º expoentes ou raízes
-// 3º multiplicaão e divisão
-// 4º adicção e subtração
+// 3º multiplicação e divisão
+// 4º adição e subtração
 
 // operadores de incremento e decremento
 let postLikes = 10;
@@ -27,7 +27,7 @@ let postLikes = 10;
 // postLikes--;
 
 // operadores addition, subtraction, multiplication e division assignment
-// postLikes = postLikes + 10;
+postLikes = postLikes + 10;
 // postLikes += 10;
 // postLikes -= 5;
 // postLikes *= 3;
