@@ -119,8 +119,11 @@ apenas as letras iniciais dos nomes do array "dogNames";
 - Exiba a "initials" no console.
 */
 
-// dogNames.push("Nina");
-// const initials = `${dogNames.slice(0, 1)}`;
+dogNames.push("Nina");
+const initials = `${dogNames[0].slice(0, 1)}${dogNames[1].slice(
+  0,
+  1
+)}${dogNames[2].slice(0, 1)}`;
 // console.log(initials);
 
 /*
@@ -129,6 +132,8 @@ apenas as letras iniciais dos nomes do array "dogNames";
 - Exiba a "initials" no console, mas com todas as letras minúsculas;
 - Utilize o método adequado para isso.
 */
+
+// console.log(initials.toLowerCase());
 
 /*
 11 - Comente o console.log acima e:
