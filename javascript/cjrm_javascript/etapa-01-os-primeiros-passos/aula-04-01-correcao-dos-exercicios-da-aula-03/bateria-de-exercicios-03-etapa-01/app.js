@@ -49,11 +49,9 @@ mas sem digitar os nomes das comidas diretamente;
 - Exiba a foodsInfo no console.
 */
 
-
-// VERIFICAR AQUIIIIIIIIIIIIIIIIIIIIIIII
-
-const foodsInfo = `Até aqui, o 'brazilianFoods' possui ${brazilianFoods.length} itens: ${brazilianFoods[0]}, ${brazilianFoods[1]} e  ${brazilianFoods[2]} `
+const foodsInfo = `Até aqui, o "brazilianFoods" possui ${brazilianFoods.length} itens: ${brazilianFoods[0]}, ${brazilianFoods[1]} e  ${brazilianFoods[2]} `;
 // console.log(foodsInfo);
+// OBS: Dá mesma forma que a length traz o comprimento de uma string, ela traz a quantidade de intens que um array tem.
 
 /*
 06 - Comente o console.log acima e:
@@ -81,8 +79,7 @@ let dogNames = maleDogNames.concat(femaleDogNames);
 - O resultado deve ser: "nome1, nome2, nome3, nome4".
 */
 
-// VERIFICAR AQUIIIIIIIIIIIIIIIIIIIIIIII
-// console.log(dogNames.join(', '));
+// console.log(dogNames.join(", "));
 
 /*
 08 - Comente o console.log acima e:
@@ -97,10 +94,10 @@ utilizando o método adequado para isso;
 agora é "Lilica".
 */
 
-// VERIFICAR AQUIIIIIIIIIIIIIIIIIIIIIIII
-
-dogNames.pop()
+dogNames.pop();
 // console.log(dogNames[dogNames.length - 1]);
+// dogNames.length - 1 para obter o útimo item do array
+//
 
 /*
 09 - Comente o console.log acima e:
@@ -114,11 +111,9 @@ apenas as letras iniciais dos nomes do array "dogNames";
 - Exiba a "initials" no console.
 */
 
-// VERIFICAR AQUIIIIIIIIIIIIIIIIIIIIIIII
-
 dogNames.push("Nina");
-// const initials = `${dogNames[0].slice(0, 1)}${dogNames[1].slice(0,1)}${dogNames[2].slice(0, 1)}`;
 const initials = `${dogNames[0][0]}${dogNames[1][0]}${dogNames[2][0]}${dogNames[3][0]}`;
+// Existem duas formas de obter só a primeira letra: Com slice ou apenas notação de colchetes. Nesse caso usamos a notação de colchetes para escrever menos. ${dogNames[acessa item do array][acessa caractere desse item]}
 // console.log(initials);
 
 /*
@@ -146,9 +141,12 @@ constante que você criou.
 'A SOBREMESA é um doce à base de coco, tradicional na América Latina e em Angola.'
 */
 
-// VERIFICAR AQUIIIIIIIIIIIIIIIIIIIIIIII
-const dessert = `${dogNames[0].slice(3)}${dogNames[1].slice(2)}${dogNames[3].slice(2)}`.replace("n", "d");
+const dessert = `${dogNames[0].slice(3)}${dogNames[1].slice(
+  2
+)}${dogNames[3].slice(2)}`.replace("n", "d");
 // console.log(`A ${dessert} é um doce a base de coco, tradicional da América Latina e Angola.`);
+// ${dogNames[primeiro item do array].slice(index do caractere a partir do qual a parte da string deve ser pega)}
+// ${dogNames[0].slice(3)} -> Quando não passamos o segundo argumento, o JS entende que a partir do index 3 quero pegar todo o restante da string
 
 /*
 12 - Comente o console.log acima e:
