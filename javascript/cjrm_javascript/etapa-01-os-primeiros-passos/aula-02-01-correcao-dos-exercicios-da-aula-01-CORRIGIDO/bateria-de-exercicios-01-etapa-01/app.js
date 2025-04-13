@@ -35,13 +35,13 @@ exercícios. Inclusive o alert mencionado acima.
 05 - Declare uma const "myBirthYear", que recebe o ano do seu nascimento, com 4 dígitos. Ex.: 1930.
 */
 
-const myBirthYear = 1993;
+const myBirthYear = 1988;
 
 /*
 06 - Declare uma const "currentYear", que recebe o ano atual, com 4 dígitos.
 */
 
-const currentYear = 2025;
+const currentYear = 2019;
 
 /*
 07 - Exiba as const "myBirthYear" e "currentYear", lado a lado, no console do browser.
