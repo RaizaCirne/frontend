@@ -10,7 +10,7 @@
 02 - Armazene um array vazio em uma let "brazilianFoods";
 */
 
-
+let brazilianFoods = [];
 
 /*
 03 - Use o método adequado para adicionar os 3 seguintes itens ao array:
@@ -22,8 +22,9 @@
 - Exiba a brazilianFoods no console.
 */
 
+brazilianFoods = brazilianFoods.push("Coxinha", null, "Brigadeiro");
 
-
+// console.log(brazilianFoods);
 /*
 04 - Comente o console.log acima e:
 
@@ -31,8 +32,6 @@
 array "brazilianFoods" (null) seja substituído por "Pão de Queijo";
 - Exiba apenas o 2º item desse array no console.
 */
-
-
 
 /*
 05 - Comente o console.log acima e:
@@ -47,8 +46,6 @@ mas sem digitar os nomes das comidas diretamente;
 - Exiba a foodsInfo no console.
 */
 
-
-
 /*
 06 - Comente o console.log acima e:
 
@@ -61,8 +58,6 @@ itens "Lilica" e "Matilda";
 - Exiba a "dogNames" no console.
 */
 
-
-
 /*
 07 - Comente o console.log acima e:
 
@@ -71,8 +66,6 @@ itens "Lilica" e "Matilda";
 - Utilize o método adequado para fazer isso;
 - O resultado deve ser: "nome1, nome2, nome3, nome4".
 */
-
-
 
 /*
 08 - Comente o console.log acima e:
@@ -87,8 +80,6 @@ utilizando o método adequado para isso;
 agora é "Lilica".
 */
 
-
-
 /*
 09 - Comente o console.log acima e:
 
@@ -101,16 +92,12 @@ apenas as letras iniciais dos nomes do array "dogNames";
 - Exiba a "initials" no console.
 */
 
-
-
 /*
 10 - Comente o console.log acima e:
 
 - Exiba a "initials" no console, mas com todas as letras minúsculas;
 - Utilize o método adequado para isso.
 */
-
-
 
 /*
 11 - Comente o console.log acima e:
@@ -127,8 +114,6 @@ constante que você criou.
 
 'A SOBREMESA é um doce à base de coco, tradicional na América Latina e em Angola.'
 */
-
-
 
 /*
 12 - Comente o console.log acima e:
