@@ -33,7 +33,6 @@ Utilize os espaços entre os comentários abaixo para executar os códigos dos e
 const tom = "Tom";
 const firstTom = "Hanks";
 const secondTom = "Cruise";
-
 const myFavoriteTom = tom + " " + firstTom;
 // console.log(myFavoriteTom);
 
@@ -48,7 +47,6 @@ const myFavoriteTom = tom + " " + firstTom;
 
 const programmingLanguage = "JavaScript";
 const js = programmingLanguage[0] + programmingLanguage[4];
-
 // console.log(js);
 
 /*
@@ -61,7 +59,6 @@ const js = programmingLanguage[0] + programmingLanguage[4];
 
 const mozilla = "Mozilla Developer Network";
 const mdn = mozilla[0] + mozilla[8] + mozilla[18];
-
 // console.log(mdn);
 
 /*
@@ -129,7 +126,7 @@ const winterMessage = "o inverno está chegando";
 */
 
 const harryPotterAuthor = "J.K. Rowling";
-// console.log(harryPotterAuthor.slice(0, 4));
+// console.log(harryPotterAuthor.slice(0, 5));
 
 /*
 14 - Comente o console.log acima, e,
@@ -164,7 +161,6 @@ const reminder = 10 % 3;
 
 let episodes = 6;
 episodes++;
-
 // console.log(episodes);
 
 /*
@@ -224,14 +220,10 @@ const bookMessage = "'O Conto da Aia' é um dos livros mais vendidos da década.
 
 // REFAZER EXERCÍCIO
 const characterName = "walter white";
-let newName =
-  characterName[0].toUpperCase() +
-  characterName.slice(1, 6) +
-  " " +
-  characterName[7].toUpperCase() +
-  characterName.slice(8);
+let newName = characterName.replaceAll("w", "W");
 
 // console.log(newName);
+
 /*
 22 - Comente o console.log acima, e,
 
@@ -243,7 +235,5 @@ let newName =
 */
 
 // REFAZER
-newName = `${characterName[0].toUpperCase()}${characterName.slice(1,6
-)} ${characterName[7].toUpperCase()}${characterName.slice(8)}`;
-
+newName = `${newName}`.replaceAll("W", "w");
 console.log(newName);
