@@ -24,7 +24,8 @@ let brazilianFoods = [];
 
 brazilianFoods = brazilianFoods.push("Coxinha", null, "Brigadeiro");
 
-// console.log(brazilianFoods);
+console.log(brazilianFoods);
+
 /*
 04 - Comente o console.log acima e:
 
