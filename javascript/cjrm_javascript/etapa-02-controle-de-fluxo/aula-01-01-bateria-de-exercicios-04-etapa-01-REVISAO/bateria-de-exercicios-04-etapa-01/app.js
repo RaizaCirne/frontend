@@ -29,13 +29,15 @@ const sentence = `${my3FavoriteTVShows.slice(
 /*
   03 - Comente o console.log() acima e:
 
-  - Após a constante abaixo, armazene em uma constante "isRandomTVShowIncluded"  
-    um boolean que indica se a série que a "randomTVShow" armazena é uma das suas 3 séries favoritas;
+  - Após a constante abaixo, armazene em uma constante "isRandomTVShowIncluded" um boolean que indica se a série que a "randomTVShow" armazena é uma das suas 3 séries favoritas;
   - Utilize o método adequado para fazer essa verificação;
   - Exiba no console o boolean que a "isRandomTVShowIncluded" recebeu.
 */
 
 const randomTVShow = "Watchmen";
+const isRandomTVShowIncluded = my3FavoriteTVShows.includes(randomTVShow);
+
+// console.log(isRandomTVShowIncluded);
 
 /*
   04 - Comente o console.log() acima e:
@@ -47,6 +49,10 @@ const randomTVShow = "Watchmen";
 
   "O tipo de dado que a const "isRandomTVShowIncluded" armazena é: TIPO_DE_DADO."
 */
+
+const typeSentence = `O tipo de dado que a const "isRandomTVShowIncluded" armazena é: ${typeof isRandomTVShowIncluded}.`;
+
+// console.log(typeSentence);
 
 /*
   05 - Comente o console.log() acima e:
@@ -61,6 +67,8 @@ const randomTVShow = "Watchmen";
   "A string que a "typeSentence" armazena tem mais de NÚMERO_DE_CARACTERES  
   caracteres? BOOLEAN."
 */
+
+// TENTAR FAZER 
 
 /*
   06 - Comente o console.log() acima e:
