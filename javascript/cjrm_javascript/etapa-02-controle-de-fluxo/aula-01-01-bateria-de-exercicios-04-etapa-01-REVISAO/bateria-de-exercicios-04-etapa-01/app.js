@@ -68,8 +68,8 @@ const typeSentence = `O tipo de dado que a const "isRandomTVShowIncluded" armaze
   caracteres? BOOLEAN."
 */
 
-// TENTAR FAZER 
-
+const numberCheck = 39;
+// console.log(`A string que a "typeSentence" armazena tem mais de ${numberCheck} caracteres? ${String(typeSentence.length > numberCheck).replace('t', 'T')}.`);
 /*
   06 - Comente o console.log() acima e:
 
@@ -82,14 +82,20 @@ const typeSentence = `O tipo de dado que a const "isRandomTVShowIncluded" armaze
 
 const falsyValues = [0, "", false, "", ``, null, undefined, NaN];
 
+// console.log(`Todos os ${falsyValues.length} itens do array "falsyValues" são ${falsyValues[2]}`);
+
 /*
   07 - Comente o console.log() acima e:
 
   - Armazene em uma constante "crazyOperation" a soma entre null e 1;
-  - Armazene em uma constante "crazyConversion" a conversão da "crazyOperation"  
-    em boolean.
+  - Armazene em uma constante "crazyConversion" a conversão da "crazyOperation"  em boolean.
   - Você sabe por que essa conversão resultou em true?
 */
+
+const crazyOperation = null + 1;
+crazyConversion = Boolean(crazyOperation);
+
+// console.log(crazyConversion);
 
 /*
   08 - Comente o console.log() acima e:
@@ -104,6 +110,11 @@ const falsyValues = [0, "", false, "", ``, null, undefined, NaN];
   é: BOOLEAN."
 */
 
+const ages = [31, 82, 61, 11];
+const ageSum = ages[0] + ages[2];
+
+// console.log(`"A soma entre o 1º e o 3º item de "ages" é menor ou igual a 92. Essa afirmação  é: ${ageSum <= 92}.`)
+
 /*
   09 - Comente o console.log() acima e:
 
@@ -112,6 +123,10 @@ const falsyValues = [0, "", false, "", ``, null, undefined, NaN];
   - Essa expressão deve resultar em false.
   - Exiba a "isNotAString" no console.
 */
+
+const isNotAString = typeof randomTVShow !== "string";
+
+// console.log(isNotAString);
 
 /*
   10 - Comente o console.log() acima e:
@@ -122,3 +137,5 @@ const falsyValues = [0, "", false, "", ``, null, undefined, NaN];
 */
 
 const evenNumbers = [0, 2, 4, 6, 8, 10];
+
+console.log(evenNumbers.indexOf(8) !== -1);
