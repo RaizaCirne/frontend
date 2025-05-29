@@ -49,6 +49,18 @@
   "Esta é a Xª vez que esta frase é exibida no console."
 */
 
+// USANDO FOR
+// for (i = 1; i < 11; i++) {
+//   console.log(`Esta é a ${i}º vez que esta frase é exibida no console.`);
+// }
+
+// USANDO WHILE
+// let i = 1;
+// while (i < 11) {
+//   console.log(`Esta é a ${i}º vez que esta frase é exibida no console.`);
+//   i++;
+// }
+
 /*
   04 - Comente o loop acima e:
 
