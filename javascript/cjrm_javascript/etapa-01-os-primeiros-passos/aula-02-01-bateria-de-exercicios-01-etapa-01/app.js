@@ -32,7 +32,8 @@ exercícios. Inclusive o alert mencionado acima.
 */
 
 /*
-05 - Declare uma const "myBirthYear", que recebe o ano do seu nascimento, com 4 dígitos. Ex.: 1930.
+05 - Declare uma const "myBirthYear", que recebe o ano do seu nascimento, com 4
+dígitos. Ex.: 1930.
 */
 
 const myBirthYear = 1993;
@@ -90,8 +91,10 @@ http://whathappenedinmybirthyear.com/
 
 - Abra o console do devtools;
 - Provavelmente, haverão alguns warnings nele. Pressione ctrl + L para limpá-lo;
-- No console do devtools, declare uma const "myBirthYear" que recebe o ano em que você nasceu (4 dígitos) e pressione enter;
-- No final da 1ª linha do código abaixo, substitua SEU_ANO_DE_NASCIMENTO pelo uso da const myBirthYear;
+- No console do devtools, declare uma const "myBirthYear" que recebe o ano em que  
+você nasceu (4 dígitos) e pressione enter;
+- No final da 1ª linha do código abaixo, substitua SEU_ANO_DE_NASCIMENTO pelo uso  
+da const myBirthYear;
 - Cole as duas linhas de código no console, pressione enter, feche o console e  
 veja o que acontece.
 
