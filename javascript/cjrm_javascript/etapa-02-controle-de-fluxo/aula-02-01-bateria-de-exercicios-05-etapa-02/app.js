@@ -23,9 +23,9 @@
 
 // let i = 0;
 
-// while (i < 6) {
+// while (i <= 5) {
 //   console.log(i);
-//   i++
+//   i++;
 // }
 
 /*
@@ -34,7 +34,7 @@
   - Utilizando um for loop, faça o mesmo que foi pedido no exercício 01.
 */
 
-// for (i = 0; i < 6; i++) {
+// for (i = 0; i <= 5; i++) {
 //   console.log(i);
 // }
 
@@ -49,15 +49,14 @@
   "Esta é a Xª vez que esta frase é exibida no console."
 */
 
-// USANDO FOR
-// for (i = 1; i < 11; i++) {
-//   console.log(`Esta é a ${i}º vez que esta frase é exibida no console.`);
+// for (i = 1; i <= 10; i++) {
+//   console.log(`Esta é a ${i}ª vez que esta frase é exibida no console.`);
 // }
 
-// USANDO WHILE
 // let i = 1;
-// while (i < 11) {
-//   console.log(`Esta é a ${i}º vez que esta frase é exibida no console.`);
+
+// while (i <= 10) {
+//   console.log(`Esta é a ${i}ª vez que esta frase é exibida no console.`);
 //   i++;
 // }
 
@@ -72,6 +71,13 @@
 */
 
 const cities = ["São Paulo", "Rio de Janeiro", "Minas Gerais"];
+let upperCaseCities = [];
+
+for (let i = 0; i < cities.length; i++) {
+  upperCaseCities.push(cities[i].toLocaleUpperCase());
+}
+
+// console.log(upperCaseCities);
 
 /*
   05 - Comente o console.log acima e:
