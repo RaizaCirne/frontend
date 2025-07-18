@@ -74,7 +74,7 @@ const cities = ["São Paulo", "Rio de Janeiro", "Minas Gerais"];
 let upperCaseCities = [];
 
 for (let i = 0; i < cities.length; i++) {
-  upperCaseCities.push(cities[i].toLocaleUpperCase());
+  upperCaseCities.push(cities[i].toUpperCase());
 }
 
 // console.log(upperCaseCities);
@@ -89,6 +89,13 @@ for (let i = 0; i < cities.length; i++) {
 */
 
 const names = ["João Grilo", "Chicó", "Rosinha"];
+let htmlTemplate = "";
+
+for (let i = 0; i < names.length; i++) {
+  htmlTemplate += `<li>${names[i]}</li>`;
+}
+
+// console.log(htmlTemplate);
 
 /*
   06 - Comente o console.log acima e:
@@ -100,6 +107,13 @@ const names = ["João Grilo", "Chicó", "Rosinha"];
 */
 
 const numbers = ["91", "5", "30", "97", "83", "31"];
+let sum = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+  sum += Number(numbers[i]);
+}
+
+// console.log(sum === 337);
 
 /*
   07 - Comente o console.log acima.
@@ -125,3 +139,13 @@ const arrays = [
   [8, 32, 16],
   [2, 8, 4],
 ];
+
+let arraySum = 0;
+
+for (let i = 0; i < arrays.length; i++) {
+  for (let j = 0; j < arrays[i].length; j++) {
+    arraySum += arrays[i][j];
+  }
+}
+
+console.log(arraySum);
