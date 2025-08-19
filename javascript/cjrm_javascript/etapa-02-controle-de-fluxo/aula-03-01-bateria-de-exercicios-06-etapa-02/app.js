@@ -23,14 +23,14 @@
     "Nem pera nem abacaxi existem no array "fruits".".
 */
 
-const fruits = ["morango", "banana", "mamão"];
+const fruits = ["morango", "abacaxi", "banana", "pera", "mamão"];
 
 if (fruits.includes("abacaxi")) {
-  console.log("A string ´abacaxi´ existe no array fruits.");
+  console.log(`A string "abacaxi" existe no array fruits.`);
 } else if (fruits.includes("pera")) {
-  console.log("A string 'pera' existe no array fruits.");
+  console.log(`A string "pera" existe no array fruits.`);
 } else {
-  console.log("Nem pera nem abacaxi existem no array 'fruits'.");
+  console.log(`Nem pera nem abacaxi existem no array "fruits".`);
 }
 
 /*
@@ -46,6 +46,18 @@ if (fruits.includes("abacaxi")) {
   lógico precisam ter a constante especificada. Exemplo: hour > x && hour < y.
 */
 
+const hour = 11;
+const isMorning = hour >= 6 && hour <= 11;
+const isAfternoon = hour >= 12 && hour <= 17;
+
+if (isMorning) {
+  console.log("Bom dia!");
+} else if (isAfternoon) {
+  console.log("Boa tarde!");
+} else {
+  console.log("Boa noite!");
+}
+
 /*
   03
 
@@ -60,6 +72,19 @@ if (fruits.includes("abacaxi")) {
     também está funcionando.
 */
 
+const age = 31;
+let priceMessage = null;
+const isChild = age <= 7;
+const isOlder = age >= 65;
+
+if (isChild || isOlder) {
+  priceMessage = "Para você, a entrada é grátis!";
+} else {
+  priceMessage = "A entrada é R$ 30,00.";
+}
+
+console.log(priceMessage);
+
 /*
   04
 
@@ -70,14 +95,24 @@ if (fruits.includes("abacaxi")) {
 */
 
 const numbers = [7, 92, 34, 46, 90, 25, 11, 3, 89, 76, 99];
+let newArray = [];
+
+for (let i = 0; i < numbers.length; i++) {
+  const number = numbers[i];
+  const isNumberBetween11And90 = number >= 11 && number <= 90;
+
+  if (isNumberBetween11And90) {
+    newArray.push(numbers[i]);
+  }
+}
+
+console.log(newArray);
 
 /*
   05
 
-  - O array "crazyArray" (abaixo) possui 3 tipos de dados: numbers, booleans  
-    e strings;
-  - Considerando este array, substitua os "X" da frase abaixo pelas informações  
-    corretas;
+  - O array "crazyArray" (abaixo) possui 3 tipos de dados: numbers, booleans e strings;
+  - Considerando este array, substitua os "X" da frase abaixo pelas informações corretas;
   - Gere essas informações à partir de um for loop;
   - Exiba a frase no console.
 
@@ -98,6 +133,28 @@ const crazyArray = [
   false,
 ];
 
+let numberAmount = 0;
+let booleanAmount = 0;
+let stringAmount = 0;
+
+for (let i = 0; i < crazyArray.length; i++) {
+  const typeOfItem = typeof crazyArray[i];
+  const isItemANumber = typeOfItem === "number";
+  const isItemABoolean = typeOfItem === "boolean";
+
+  if (isItemANumber) {
+    numberAmount++;
+  } else if (isItemABoolean) {
+    booleanAmount++;
+  } else {
+    stringAmount++;
+  }
+}
+
+console.log(
+  `O crazyArray tem ${booleanAmount} booleans, ${numberAmount} números e ${stringAmount} strings`
+);
+
 /*
   06
 
@@ -116,3 +173,23 @@ const crazyArray = [
 */
 
 const randomNumbers = [73, 4, 67, 10, 31, 58];
+let oddNumbers = [];
+let evenNumbers = [];
+
+for (let i = 0; i < randomNumbers.length; i++) {
+  const number = randomNumbers[i];
+  const isEvenNumber = number % 2 === 0;
+
+  if (isEvenNumber) {
+    evenNumbers.push(number);
+  } else {
+    oddNumbers.push(number);
+  }
+}
+
+const evenNumbersString = evenNumbers.join(", ").replace(", 5", " e 5");
+const oddNumbersString = oddNumbers.join(", ").replace(", 3", " e 3");
+
+console.log(
+  `Numeros ímpares: ${oddNumbersString} Números pares: ${evenNumbersString}.`
+);
