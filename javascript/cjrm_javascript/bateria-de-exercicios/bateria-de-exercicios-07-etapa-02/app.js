@@ -56,28 +56,34 @@ console.log(sumResult);
   - Exiba a frase no console.
 */
 
-const sentence = ["A", "certeza", "dúvida", "é", "o", "princípio", "da", "sabedoria.",];
-let newSentence = ' '; 
+const sentence = [
+  "A",
+  "certeza",
+  "dúvida",
+  "é",
+  "o",
+  "princípio",
+  "da",
+  "sabedoria.",
+];
+let newSentence = " ";
 
 for (let i = 0; i < sentence.length; i++) {
   const word = sentence[i];
 
   if (word === "certeza") {
-    continue
+    continue;
   }
 
-  newSentence += `${word} `
+  newSentence += `${word} `;
 }
-console.log(newSentence)
-
-
+console.log(newSentence);
 
 /*
   05
 
   - Itere sobre o array "randomValues" apenas até a 4ª string dele;
-  - Exiba a string abaixo no console, mantendo a formatação de lista e inserindo  
-    as informações corretas:
+  - Exiba a string abaixo no console, mantendo a formatação de lista e inserindo as informações corretas:
 
   "
     3 informações sobre o array randomValues:
@@ -87,7 +93,63 @@ console.log(newSentence)
   "
 */
 
-const randomValues = [57, false, "JS", [], true, "HTML", 31, null, false, "CSS", 97, true, "Git", 11,"sticker", false, "GitHub",true, null,];
+const randomValues = [
+  57,
+  false,
+  "JS",
+  [],
+  true,
+  "HTML",
+  31,
+  null,
+  false,
+  "CSS",
+  97,
+  true,
+  "Git",
+  11,
+  "sticker",
+  false,
+  "GitHub",
+  true,
+  null,
+];
+
+let stringsAmount = 0;
+let booleansAmount = 0;
+let totalIterations = 0;
+let firstFourStrings = [];
+
+for (let i = 0; i < randomValues.length; i++) {
+  const item = randomValues[i];
+  const typeOfItem = typeof randomValues[i];
+  const isItemAString = typeOfItem === "string";
+  const isItemABoolean = typeOfItem === "boolean";
+
+  if (stringsAmount === 4) {
+    break;
+  }
+
+  if (isItemAString) {
+    stringsAmount++;
+    firstFourStrings.push(item);
+  }
+
+  if (isItemABoolean) {
+    booleansAmount++;
+  }
+
+  totalIterations++;
+}
+const lastItem = firstFourStrings[firstFourStrings.length - 1];
+const fourStrings = firstFourStrings
+  .join(", ")
+  .replace(`, ${lastItem}`, ` e ${lastItem}`);
+
+console.log(`3 informações sobre o array randomValues:
+    - As primeiras 4 strings são ${fourStrings};
+    - Até que as primeiras 4 strings fossem iteradas, ${booleansAmount} booleans foram iterados;
+    - O array foi iterado por ${totalIterations} vezes.`);
 
 /*
   06
