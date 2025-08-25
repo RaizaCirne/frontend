@@ -171,7 +171,26 @@ console.log(`3 informações sobre o array randomValues:
     da bebida além da que você escolheu.
 */
 
-// const drinkType
+const drinkType = "água";
+let drinkMessage = null;
+
+switch (drinkType) {
+  case "água":
+    drinkMessage =
+      "Substância química cujas moléculas são formadas por dois átomos de hidrogênio e um de oxigênio.";
+    break;
+  case "refrigerante":
+    drinkMessage =
+      "Bebida não alcoólica e não fermentada, fabricada industrialmente, à base de água mineral e açúcar.";
+    break;
+  case "suco":
+    drinkMessage = "Bebida produzida do líquido extraído de frutos.";
+    break;
+  default:
+    drinkMessage = "Bebida desconhecida.";
+}
+
+console.log(drinkMessage);
 
 /*
   07
@@ -181,7 +200,19 @@ console.log(`3 informações sobre o array randomValues:
     para testar o switch que você escreveu.
 */
 
-const a = 2;
+const number = 2;
+const numberMessage = 'O valor de "number é';
+
+switch (number) {
+  case 0:
+    console.log(`${numberMessage} ${number}`);
+    break;
+  case 1:
+    console.log(`${numberMessage} ${number}`);
+    break;
+  default:
+    console.log(`${numberMessage} qualquer número, exceto 0 e 1`);
+}
 
 // if (a === 0) {
 //   console.log(`O valor de "a" é ${a}`)
