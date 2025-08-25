@@ -122,7 +122,7 @@ let firstFourStrings = [];
 
 for (let i = 0; i < randomValues.length; i++) {
   const item = randomValues[i];
-  const typeOfItem = typeof randomValues[i];
+  const typeOfItem = typeof item;
   const isItemAString = typeOfItem === "string";
   const isItemABoolean = typeOfItem === "boolean";
 
@@ -154,7 +154,7 @@ console.log(`3 informações sobre o array randomValues:
 /*
   06
 
-  - Descomente a constante abaixo atribua a ela algum tipo de bebida. Exemplo:  
+  - Descomente a constante abaixo e atribua a ela algum tipo de bebida. Exemplo:  
     água, refrigerante ou suco;
   - Utilize um switch statement com cases para essas 3 possibilidades de bebida;
   - Se o tipo da bebida é água, atribua à uma variável a mensagem "Substância 
