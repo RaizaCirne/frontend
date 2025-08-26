@@ -1,0 +1,2 @@
+// Principais conceitos fundamentais em qualquer linguaguem - do tipo object 
+// Papel principal das funções: Permitir criar um bloco de código que pode ser invocado e executado quantas vezes forem necessárias  
