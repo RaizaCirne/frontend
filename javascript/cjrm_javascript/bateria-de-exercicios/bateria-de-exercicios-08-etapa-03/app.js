@@ -7,6 +7,12 @@
   - Exiba o resultado no console, sem inserir um console.log() dentro da função.
 */
 
+function numberMutiplicacao(numberOne, numberTwo) {
+  return numberOne * numberTwo;
+}
+
+console.log(numberMutiplicacao(6, 2));
+
 /*
   02
 
@@ -14,6 +20,11 @@
     **function expression** que retorne o resultado da **divisão** entre esses  
     2 números.
 */
+
+const numberDivisao = function (numberOne, numberTwo) {
+  return numberOne / numberTwo;
+};
+console.log(numberDivisao(6, 2));
 
 /*
   03
@@ -39,7 +50,23 @@
     função.
 */
 
-const millennialWords = ['lol', 'yolo', 'troll', 'stalkear', 'selfie', 'influencer', 'crush', 'fitness', 'hater', 'bae', 'random', 'kawaii', 'outfit', 'mood', 'fail']
+const millennialWords = [
+  "lol",
+  "yolo",
+  "troll",
+  "stalkear",
+  "selfie",
+  "influencer",
+  "crush",
+  "fitness",
+  "hater",
+  "bae",
+  "random",
+  "kawaii",
+  "outfit",
+  "mood",
+  "fail",
+];
 
 /*
   05
@@ -52,7 +79,7 @@ const millennialWords = ['lol', 'yolo', 'troll', 'stalkear', 'selfie', 'influenc
   "O array "randomNumbers" possui XX números, sendo XX positivos e XX negativos."
 */
 
-const randomNumbers = [-2, 93, 34, -1, 1, 93, 11, -7, 47, -3]
+const randomNumbers = [-2, 93, 34, -1, 1, 93, 11, -7, 47, -3];
 
 /*
   06
@@ -73,32 +100,88 @@ const randomNumbers = [-2, 93, 34, -1, 1, 93, 11, -7, 47, -3]
 */
 
 const functions = [
-  function () { return 'Plymouth' },
-  function () { return 'é' },
-  function () { return 'uma' },
-  function () { return 'cidade' },
-  function () { return 'fantasma' },
-  function () { return 'localizada' },
-  function () { return 'na' },
-  function () { return 'ilha' },
-  function () { return 'de' },
-  function () { return 'Montserrat,' },
-  function () { return 'um' },
-  function () { return 'território' },
-  function () { return 'ultramarino' },
-  function () { return 'do' },
-  function () { return 'Reino' },
-  function () { return 'Unido' },
-  function () { return 'localizado' },
-  function () { return 'na' },
-  function () { return 'cadeia' },
-  function () { return 'de' },
-  function () { return 'Ilhas' },
-  function () { return 'de' },
-  function () { return 'Sotavento' },
-  function () { return 'nas' },
-  function () { return 'Pequenas' },
-  function () { return 'Antilhas,' },
-  function () { return 'Índias' },
-  function () { return 'Ocidentais.' }
-]
+  function () {
+    return "Plymouth";
+  },
+  function () {
+    return "é";
+  },
+  function () {
+    return "uma";
+  },
+  function () {
+    return "cidade";
+  },
+  function () {
+    return "fantasma";
+  },
+  function () {
+    return "localizada";
+  },
+  function () {
+    return "na";
+  },
+  function () {
+    return "ilha";
+  },
+  function () {
+    return "de";
+  },
+  function () {
+    return "Montserrat,";
+  },
+  function () {
+    return "um";
+  },
+  function () {
+    return "território";
+  },
+  function () {
+    return "ultramarino";
+  },
+  function () {
+    return "do";
+  },
+  function () {
+    return "Reino";
+  },
+  function () {
+    return "Unido";
+  },
+  function () {
+    return "localizado";
+  },
+  function () {
+    return "na";
+  },
+  function () {
+    return "cadeia";
+  },
+  function () {
+    return "de";
+  },
+  function () {
+    return "Ilhas";
+  },
+  function () {
+    return "de";
+  },
+  function () {
+    return "Sotavento";
+  },
+  function () {
+    return "nas";
+  },
+  function () {
+    return "Pequenas";
+  },
+  function () {
+    return "Antilhas,";
+  },
+  function () {
+    return "Índias";
+  },
+  function () {
+    return "Ocidentais.";
+  },
+];
