@@ -39,6 +39,14 @@ console.log(numberDivisao(6, 2));
   "Esta é a Xª vez que essa string é exibida."
 */
 
+function log(value = "") {
+  console.log(value);
+}
+
+for (let i = 0; i < 7; i++) {
+  console.log(`Esta é a ${i + 1} vez que essa string é exibida.`);
+}
+
 /*
   04
 
