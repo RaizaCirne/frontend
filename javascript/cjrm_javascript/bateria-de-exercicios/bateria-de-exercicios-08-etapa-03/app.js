@@ -7,6 +7,7 @@
   - Exiba o resultado no console, sem inserir um console.log() dentro da função.
 */
 
+// REFAZER EXERCÍCIOS
 function numberMutiplicacao(numberOne, numberTwo) {
   return numberOne * numberTwo;
 }
