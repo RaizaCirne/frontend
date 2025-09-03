@@ -1,18 +1,16 @@
 /*
   01
 
-  - Utilizando function declaration, implemente uma função que recebe 2 números  
-    por parâmetro e retorna o resultado da multiplicação entre esses 2 números;
+  - Utilizando function declaration, implemente uma função que recebe 2 números por parâmetro e retorna o resultado da multiplicação entre esses 2 números;
   - Previna que esses parâmetros recebam undefined;
   - Exiba o resultado no console, sem inserir um console.log() dentro da função.
 */
 
-// REFAZER EXERCÍCIOS
-function numberMutiplicacao(numberOne, numberTwo) {
-  return numberOne * numberTwo;
+function multiply(firstNumber = 0, secondNumber = 0) {
+  return firstNumber * secondNumber;
 }
 
-console.log(numberMutiplicacao(6, 2));
+console.log(multiply(5, 9));
 
 /*
   02
@@ -22,16 +20,16 @@ console.log(numberMutiplicacao(6, 2));
     2 números.
 */
 
-const numberDivisao = function (numberOne, numberTwo) {
-  return numberOne / numberTwo;
+const divide = function (firstNumber = 0, secondNumber = 0) {
+  return firstNumber / secondNumber;
 };
-console.log(numberDivisao(6, 2));
+
+console.log(divide(10, 5));
 
 /*
   03
 
-  - Implemente uma função que apenas exibe no console o valor recebido por  
-    parâmetro;
+  - Implemente uma função que apenas exibe no console o valor recebido por parâmetro;
   - Previna que o parâmetro dessa função receba undefined;
   - Faça a string abaixo ser exibida 7x no console;
   - A cada exibição, substitua o "X" pela informação correta;
@@ -40,49 +38,44 @@ console.log(numberDivisao(6, 2));
   "Esta é a Xª vez que essa string é exibida."
 */
 
-function log(value = "") {
+function log(value = "Você deve passar um valor como argumento") {
   console.log(value);
 }
 
-for (let i = 0; i < 7; i++) {
-  console.log(`Esta é a ${i + 1} vez que essa string é exibida.`);
-}
+// for (let i = 0; i < 7; i++) {
+//   let counter = i + 1;
+
+//   log(`Esta é a ${counter}ª vez que essa string é exibida.`);
+// }
 
 /*
   04
 
-  - Comente o código acima, de forma que a string não seja mais exibida no  
-    console;
-  - Implemente uma função que retorna um novo array com as strings do array  
-    "millennialWords" em letras maiúsculas;
-  - Exiba o novo array no console, sem inserir um console.log() dentro da  
-    função.
+  - Comente o código acima, de forma que a string não seja mais exibida no console;
+  - Implemente uma função que retorna um novo array com as strings do array "millennialWords" em letras maiúsculas;
+  - Exiba o novo array no console, sem inserir um console.log() dentro da função.
 */
 
-const millennialWords = [
-  "lol",
-  "yolo",
-  "troll",
-  "stalkear",
-  "selfie",
-  "influencer",
-  "crush",
-  "fitness",
-  "hater",
-  "bae",
-  "random",
-  "kawaii",
-  "outfit",
-  "mood",
-  "fail",
-];
+const millennialWords = ["lol", "yolo", "troll", "stalkear", "selfie", "influencer", "crush", "fitness", "hater", "bae", "random", "kawaii","outfit", "mood", "fail",];
+
+const transformToUpperCase = function (array = []) {
+  // gerando um novo array
+  let newArray = []
+
+  for (let i = 0; i < array.length; i++) {
+    newArray.push(array[i].toUpperCase())
+  }
+
+  return newArray;
+}
+
+log(transformToUpperCase(millennialWords))
 
 /*
   05
 
   - Implemente uma função que retorna se um número é positivo;
-  - Use essa função para descobrir quantos números positivos o array 
-    "randomNumbers" possui;
+  - Use essa função para descobrir quantos números positivos o array "randomNumbers" possui;
   - Exiba a frase abaixo no console, inserindo as informações corretas.
 
   "O array "randomNumbers" possui XX números, sendo XX positivos e XX negativos."
