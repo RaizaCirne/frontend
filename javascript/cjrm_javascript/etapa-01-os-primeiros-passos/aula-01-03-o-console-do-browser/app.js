@@ -5,4 +5,4 @@ console.log(2);
 
 // A primeira linha é executada, e em seguida, a segunda linha. 
 
-// console.log() é um MÉTODO que podemos usar para exibir valores no console do DevTools
+// console.log() é um MÉTODO que podemos usar para exibir valores no console do DevTools⏳

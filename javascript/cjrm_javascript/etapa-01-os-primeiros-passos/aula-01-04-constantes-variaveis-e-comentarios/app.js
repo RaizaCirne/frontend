@@ -13,7 +13,6 @@ console.log(points);
 var score = 75;
 console.log(score);
 
-
 /*
 Variáveis em JavaScript
 

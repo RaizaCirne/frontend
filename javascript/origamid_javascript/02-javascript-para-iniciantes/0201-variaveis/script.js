@@ -3,26 +3,27 @@ Exercício: Dica rápida, frases (string) devem ser colocadas entre aspas (simpl
 */
 
 // Declarar uma variável com o seu nome
-var firstName = "Raíza";
+let firstName = "Raíza";
 
 // Declarar uma variável com a sua idade
-var age = 31;
+
+let age = 32;
 
 // Declarar uma variável com a sua comida
 // favorita e não atribuir valor
 
-var favoriteFood;
+let favoriteFood;
 
 // Atribuir valor a sua comida favorita
 
-favoriteFood = "Pizza";
+favoriteFood = "pizza";
 
 // Declarar 5 variáveis diferentes sem valores
 
-var team = "Vasco",
+let team = "Fluminense",
   teacher,
   country,
   address,
   street;
 
-console.log(firstName, age, favoriteFood, street, team);
+console.log(firstName, age, favoriteFood, team, teacher);
