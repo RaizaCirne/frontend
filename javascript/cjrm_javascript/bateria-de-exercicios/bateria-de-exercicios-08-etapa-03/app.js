@@ -42,10 +42,10 @@ const log = function (value = "Você deve passar um valor como argumento") {
   console.log(value);
 };
 
-for (let i = 0; i < 7; i++) {
-  let counter = i + 1;
-  log(`Esta é a ${counter}ª vez que essa string é exibida`);
-}
+// for (let i = 0; i < 7; i++) {
+//   let counter = i + 1;
+//   log(`Esta é a ${counter}ª vez que essa string é exibida`);
+// }
 
 /*
 Explicação do exercício 03: 
@@ -91,9 +91,22 @@ const millennialWords = [
   "mood",
   "fail",
 ];
-// TENTAR RESOLVER EXERCÍCIO 04. 
-// CORREÇÃO DO EXERCÍCIO 05 NO MÍNUTO 5:53 DO VÍDEO DA AULA. 
 
+// “Criei uma função que recebe um array como parâmetro. Dentro dela, crio um novo array vazio para armazenar os resultados. Em seguida, uso um loop para percorrer cada item do array recebido, transformando cada string em letras maiúsculas e adicionando ao novo array. No final, a função retorna esse novo array, sem modificar o array original. Fora da função, utilizo o log para exibir o resultado retornado.”
+
+const transformToUpperCase = function (array = []) {
+  let newArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    const wordInUpperCase = array[i].toUpperCase();
+    newArray.push(wordInUpperCase);
+  }
+
+  return newArray;
+};
+
+const millennialWordsInUpperCase = transformToUpperCase(millennialWords);
+log(millennialWordsInUpperCase);
 
 /*
   05
