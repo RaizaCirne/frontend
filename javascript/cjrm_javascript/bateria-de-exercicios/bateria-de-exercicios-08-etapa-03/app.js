@@ -10,7 +10,7 @@ function multiply(firstNumber = 0, secondNumber = 0) {
   return firstNumber * secondNumber;
 }
 
-console.log(multiply(5, 9));
+console.log(multiply(5, 9)); // retorna 45
 
 /*
   02
@@ -24,7 +24,7 @@ const divide = function (firstNumber = 0, secondNumber = 0) {
   return firstNumber / secondNumber;
 };
 
-console.log(divide(10, 5));
+console.log(divide(10, 5)); // retorna 2
 
 /*
   03
@@ -38,15 +38,33 @@ console.log(divide(10, 5));
   "Esta é a Xª vez que essa string é exibida."
 */
 
-function log(value = "Você deve passar um valor como argumento") {
+const log = function (value = "Você deve passar um valor como argumento") {
   console.log(value);
+};
+
+for (let i = 0; i < 7; i++) {
+  let counter = i + 1;
+  log(`Esta é a ${counter}ª vez que essa string é exibida`);
 }
 
-// for (let i = 0; i < 7; i++) {
-//   let counter = i + 1;
+/*
+Explicação do exercício 03: 
+1 - value é o que a função log recebe por parâmetro
+2 - value = "Você deve passar um valor como argumento" -> a string dentro de value é o que previne que o parâmetro da função log receba undefined; 
+3 - console.log(value) -> Toda vez que a função log() for invocada, ela vai exibir no console o valor do parâmetro value, ou seja, vai exibir: "Você deve passar um valor como argumento", a não ser que eu passe um novo argumento para value. 
+4 - Exibindo a frase   "Esta é a Xª vez que essa string é exibida." 7x no console: 
 
-//   log(`Esta é a ${counter}ª vez que essa string é exibida.`);
-// }
+  for (let i = 0; i < 7; i++) {
+    let counter = i + 1;
+
+    log(`Esta é a ${counter}ª vez que essa string é exibida`);
+}
+
+OBS: let counter = i + 1; 
+-> Na primeira execução do loop i armazena 0, e 0+1 = 1. 
+-> Na segunda execução do loop i armazena 1, e 1+1 = 2. 
+-> Na segunda execução do loop i armazena 2, e 2+1 = 3 e assim por diante, até chegar 7. 
+*/
 
 /*
   04
@@ -56,20 +74,26 @@ function log(value = "Você deve passar um valor como argumento") {
   - Exiba o novo array no console, sem inserir um console.log() dentro da função.
 */
 
-const millennialWords = ["lol", "yolo", "troll", "stalkear", "selfie", "influencer", "crush", "fitness", "hater", "bae", "random", "kawaii","outfit", "mood", "fail",];
+const millennialWords = [
+  "lol",
+  "yolo",
+  "troll",
+  "stalkear",
+  "selfie",
+  "influencer",
+  "crush",
+  "fitness",
+  "hater",
+  "bae",
+  "random",
+  "kawaii",
+  "outfit",
+  "mood",
+  "fail",
+];
+// TENTAR RESOLVER EXERCÍCIO 04. 
+// CORREÇÃO DO EXERCÍCIO 05 NO MÍNUTO 5:53 DO VÍDEO DA AULA. 
 
-const transformToUpperCase = function (array = []) {
-  // gerando um novo array
-  let newArray = []
-
-  for (let i = 0; i < array.length; i++) {
-    newArray.push(array[i].toUpperCase())
-  }
-
-  return newArray;
-}
-
-log(transformToUpperCase(millennialWords))
 
 /*
   05
