@@ -120,6 +120,54 @@ log(millennialWordsInUpperCase);
 
 const randomNumbers = [-2, 93, 34, -1, 1, 93, 11, -7, 47, -3];
 
+// const isPositive = function (number) {
+//   if (number > 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
+// let countPositives = 0;
+
+// for (let i = 0; i < randomNumbers.length; i++) {
+//   if (isPositive(randomNumbers[i])) {
+//     countPositives++;
+//   }
+// }
+
+// let totalNumbers = randomNumbers.length;
+// let negativeNumbers = randomNumbers.length - countPositives;
+
+// console.log(
+//   `O array "randomNumbers" possui ${totalNumbers} números, sendo ${countPositives} positivos e ${negativeNumbers} negativos.`
+// );
+
+let positiveNumbersCounter = 0;
+let negativeNumbersCounter = 0;
+
+const isPositive = function (number = 0) {
+  return number >= 1;
+};
+
+for (let i = 0; i < randomNumbers.length; i++) {
+  const isPositiveNumber = randomNumbers[i];
+
+  if (isPositive(isPositiveNumber)) {
+    positiveNumbersCounter++;
+  } else {
+    negativeNumbersCounter++;
+  }
+}
+
+console.log(
+  `O array "randomNumbers" possui ${randomNumbers.length} números, sendo ${positiveNumbersCounter} positivos e ${negativeNumbersCounter} negativos.`
+);
+
+// Explicação: “Criei uma função que verifica se um número é positivo. Depois percorro o array de números usando um loop e, para cada valor, utilizo essa função para contar quantos são positivos. Com base nisso, calculo quantos são negativos e exibo no console o total de números, a quantidade de positivos e de negativos.”
+
+// Explicação 2: “Criei uma função que verifica se um número é positivo, retornando true ou false. Dentro do for, cada número do array é passado como argumento para essa função. Se a função retornar true, o contador de positivos é incrementado. Esse processo se repete até o final do array.”
+
 /*
   06
 
