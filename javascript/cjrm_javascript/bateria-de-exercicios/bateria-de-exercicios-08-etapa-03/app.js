@@ -124,7 +124,7 @@ const randomNumbers = [-2, 93, 34, -1, 1, 93, 11, -7, 47, -3];
 
 // Explicação 2: “Criei uma função que verifica se um número é positivo, retornando true ou false. Dentro do for, cada número do array é passado como argumento para essa função. Se a função retornar true, o contador de positivos é incrementado. Esse processo se repete até o final do array.”
 
-// Minha resolução 
+// Minha resolução
 
 // const isPositive = function (number) {
 //   if (number > 0) {
@@ -171,7 +171,6 @@ console.log(
   `O array "randomNumbers" possui ${randomNumbers.length} números, sendo ${positiveNumbersCounter} positivos e ${negativeNumbersCounter} negativos.`
 );
 
-
 /*
   06
 
@@ -182,7 +181,41 @@ console.log(
     função.
 */
 
-// getOddNumbers([83, 52, 31, 73, 98, 37, 61, 56, 12, 24, 35, 3, 34, 80, 42])
+const getOddNumbers = function (numbers = []) {
+  let newArray = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    const number = numbers[i];
+    const isOddNumber = number % 2 !== 0;
+    if (isOddNumber) {
+      newArray.push(number);
+    }
+  }
+  return newArray;
+};
+
+const oddNumbers = getOddNumbers([83, 52, 31, 73, 98, 37, 61, 56, 12, 24, 35, 3, 34, 80, 42])
+console.log(oddNumbers);
+
+// const isOdd = function (number) {
+//   return number % 2 !== 0;
+// };
+
+// const getOddNumbers = function (numbers) {
+//   let oddNumbers = [];
+
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (isOdd(numbers[i])) {
+//       oddNumbers.push(numbers[i]);
+//     }
+//   }
+
+//   return oddNumbers;
+// };
+
+// console.log(
+//   getOddNumbers([83, 52, 31, 73, 98, 37, 61, 56, 12, 24, 35, 3, 34, 80, 42])
+// );
 
 /*
   07
