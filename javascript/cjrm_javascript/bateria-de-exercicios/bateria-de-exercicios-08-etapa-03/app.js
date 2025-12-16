@@ -194,7 +194,9 @@ const getOddNumbers = function (numbers = []) {
   return newArray;
 };
 
-const oddNumbers = getOddNumbers([83, 52, 31, 73, 98, 37, 61, 56, 12, 24, 35, 3, 34, 80, 42])
+const oddNumbers = getOddNumbers([
+  83, 52, 31, 73, 98, 37, 61, 56, 12, 24, 35, 3, 34, 80, 42,
+]);
 console.log(oddNumbers);
 
 // const isOdd = function (number) {
@@ -309,3 +311,15 @@ const functions = [
     return "Ocidentais.";
   },
 ];
+
+let sentence = "";
+
+for (let i = 0; i < functions.length; i++) {
+  const string = `${functions[i]()} `;
+  sentence += string;
+  // a sentence (frase) recebe o valor que ela já tem concatenada a string atual. 
+}
+
+console.log(sentence);
+
+// “Criei uma string vazia. Percorri o array de funções e, em cada iteração, executei a função atual para obter uma palavra. Fui concatenando cada palavra na string final, formando a frase completa.”
