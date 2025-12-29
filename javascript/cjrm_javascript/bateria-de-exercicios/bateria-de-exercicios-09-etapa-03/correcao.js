@@ -17,11 +17,9 @@
 //   return String(value);
 // }
 
-const convertToString = (value) => {
-  return String(value);
-};
+const convertToString = (value) => String(value);
 
-console.log(convertToString("Amo praia"));
+console.log(typeof convertToString(true));
 
 /*
   02
@@ -30,9 +28,9 @@ console.log(convertToString("Amo praia"));
     recebida por parâmetro possui.
 */
 
-const returnsTheNumberOfStrings = (value) => value.length;
+const getStringLength = (string) => string.length;
 
-console.log(returnsTheNumberOfStrings("Raíza"));
+console.log(getStringLength("olá"));
 
 /*
   03
@@ -59,11 +57,9 @@ console.log(
   - Ao ser invocada, a função deve retornar o index do caractere na string.
 */
 
-const returnCharacterIndex = (caractere, string) => {
-  return string.indexOf(caractere);
-};
+const getIndex = (character, string) => string.indexOf(character);
 
-console.log(returnCharacterIndex("u", "deus"));
+console.log(getIndex("2", "123"));
 
 /*
   05
