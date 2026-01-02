@@ -72,6 +72,11 @@ console.log(returnCharacterIndex("u", "deus"));
     passado por argumento existe no array (também passado por argumento).
 */
 
+const isItemIncluded = (item, array) => {
+  return array.includes(item);
+};
+
+console.log(isItemIncluded("oi", ["Daniela", "Raíza"]));
 /*
   06
 
