@@ -68,6 +68,10 @@ console.log(getIndex("2", "123"));
     passado por argumento existe no array (também passado por argumento).
 */
 
+const isItemIncluded = (item, array) => array.includes(item);
+
+console.log(isItemIncluded(3, [7, 3, 1]));
+
 /*
   06
 
