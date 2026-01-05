@@ -79,6 +79,11 @@ console.log(isItemIncluded(3, [7, 3, 1]));
     argumentos em sua invocação;
 */
 
+const concatArrays = (firstArray, secondArray) =>
+  firstArray.concat(secondArray);
+
+console.log(concatArrays([1, 2, 3], [4, 5, 6]));
+
 /*
   07
 

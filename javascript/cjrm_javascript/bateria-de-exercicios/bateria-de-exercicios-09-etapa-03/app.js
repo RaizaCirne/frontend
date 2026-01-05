@@ -84,6 +84,10 @@ console.log(isItemIncluded("oi", ["Daniela", "Raíza"]));
     argumentos em sua invocação;
 */
 
+const arrayConcatenation = (array1, array2) => array1.concat(array2);
+
+console.log(arrayConcatenation(["Raíza", "Daniela"], ["Athena", "Marcos"]));
+
 /*
   07
 
