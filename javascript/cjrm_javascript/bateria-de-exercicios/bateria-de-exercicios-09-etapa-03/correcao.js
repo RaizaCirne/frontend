@@ -91,12 +91,23 @@ console.log(concatArrays([1, 2, 3], [4, 5, 6]));
     mas com o último item removido.
 */
 
+const arrayLastItem = (array) => {
+  array.pop();
+  return array;
+};
+
+console.log(arrayLastItem([1, 2, 3]));
+
 /*
   08
 
   - Crie uma função que retorna se o valor passado como argumento em sua  
     invocação é null.
 */
+
+const isNull = (value) => value === null;
+
+console.log(isNull(null));
 
 /*
   09
@@ -109,6 +120,16 @@ console.log(concatArrays([1, 2, 3], [4, 5, 6]));
     foi exibido.
 */
 
+const invokeCallback = (callback) => {
+  callback();
+};
+
+const logName = () => {
+  console.log("Raíza Cirne");
+};
+
+invokeCallback(logName);
+
 /*
   10
 
@@ -120,6 +141,14 @@ console.log(concatArrays([1, 2, 3], [4, 5, 6]));
     resulte no triplo de 33.
 */
 
+const callCalback = (value, callback) => {
+  return callback(value);
+};
+
+const triple = (number) => number * 3;
+
+console.log(callCalback(33, triple));
+
 /*
   11
 
@@ -130,6 +159,15 @@ console.log(concatArrays([1, 2, 3], [4, 5, 6]));
 */
 
 const numbers = [1, 2, 3];
+
+const showNumbersInfo = (item, index, array) => {
+  const itemPosition = index + 1;
+  const items = array.join(", ");
+
+  console.log(`O ${itemPosition}º item do array [${items}] é ${item}.`);
+};
+
+numbers.forEach(showNumbersInfo);
 
 /*
   12

@@ -5,6 +5,4 @@ const myFunc = (callback) => {
   callback(value);
 };
 
-myFunc((number) => {
-  console.log(number);
-});
+myFunc((number) => {console.log(number);});

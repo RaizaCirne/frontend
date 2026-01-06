@@ -95,12 +95,23 @@ console.log(arrayConcatenation(["Raíza", "Daniela"], ["Athena", "Marcos"]));
     mas com o último item removido.
 */
 
+const removeItem = (array) => {
+  array.pop();
+  return array;
+};
+
+console.log(removeItem(["maçã", "banana", "cereja", "laranja", "melão"]));
+
 /*
   08
 
   - Crie uma função que retorna se o valor passado como argumento em sua  
     invocação é null.
 */
+
+const isNull = (value) => value === null;
+
+console.log(isNull(null));
 
 /*
   09
@@ -113,6 +124,16 @@ console.log(arrayConcatenation(["Raíza", "Daniela"], ["Athena", "Marcos"]));
     foi exibido.
 */
 
+const invokeCallback = (callback) => {
+  const value = "Raíza";
+
+  callback(value);
+};
+
+invokeCallback((myName) => {
+  console.log(myName);
+});
+
 /*
   10
 
@@ -123,6 +144,16 @@ console.log(arrayConcatenation(["Raíza", "Daniela"], ["Athena", "Marcos"]));
   - Faça com que a invocação da função descrita no 1º item deste exercício (10)  
     resulte no triplo de 33.
 */
+
+// ERRO:
+// const tripleOfAnumber = (callback) => {
+//   const value = 33;
+//   callback(value * 3);
+// };
+
+// tripleOfAnumber((number) => {
+//   console.log(number);
+// });
 
 /*
   11
@@ -135,6 +166,11 @@ console.log(arrayConcatenation(["Raíza", "Daniela"], ["Athena", "Marcos"]));
 
 const numbers = [1, 2, 3];
 
+const logNumbers = (item, index, array) => {
+  console.log(`O ${index}º item do array ${array} é ${item}.`);
+};
+
+numbers.forEach(logNumbers);
 /*
   12
 
