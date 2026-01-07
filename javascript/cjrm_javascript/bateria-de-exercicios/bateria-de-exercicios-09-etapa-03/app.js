@@ -182,16 +182,21 @@ numbers.forEach(logNumbers);
 const letters = ["v", "e", "p"];
 let lettersCopy = [];
 
-for (let i = 0; i < letters.length; i++) {
-  lettersCopy.push(letters[i]);
-}
+// for (let i = 0; i < letters.length; i++) {
+//   lettersCopy.push(letters[i]);
+// }
+
+letters.forEach((letter) => {
+  lettersCopy.push(letter);
+});
+
+console.log(lettersCopy);
 
 /*
   13
 
   - Inclua o markup abaixo em seu index.html;
-  - Gere um template HTML com parágrafos. Cada parágrafo deve conter um item do  
-    array "review";
+  - Gere um template HTML com parágrafos. Cada parágrafo deve conter um item do array "review";
   - Ao gerar o template, verifique no browser se os parágrafos foram incluídos  
     dentro da section vazia do markup abaixo.
 
@@ -215,7 +220,11 @@ const review = [
 
 let paragraphs = "";
 
-// section.innerHTML = paragraphs;
+review.forEach((text) => {
+  paragraphs += `<p>${text}</p>`;
+});
+
+section.innerHTML = paragraphs;
 
 /*
   14

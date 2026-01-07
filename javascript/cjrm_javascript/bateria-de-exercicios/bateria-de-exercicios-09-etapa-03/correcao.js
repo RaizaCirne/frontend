@@ -180,9 +180,15 @@ numbers.forEach(showNumbersInfo);
 const letters = ["v", "e", "p"];
 let lettersCopy = [];
 
-for (let i = 0; i < letters.length; i++) {
-  lettersCopy.push(letters[i]);
-}
+// for (let i = 0; i < letters.length; i++) {
+//   lettersCopy.push(letters[i]);
+// }
+
+letters.forEach((letter) => {
+  lettersCopy.push(letter);
+});
+
+console.log(lettersCopy);
 
 /*
   13
@@ -213,7 +219,13 @@ const review = [
 
 let paragraphs = "";
 
-// section.innerHTML = paragraphs;
+const createParagraphs = (paragraph) => {
+  paragraphs += `<p>${paragraph}</p>`;
+};
+
+review.forEach(createParagraphs);
+
+section.innerHTML = paragraphs;
 
 /*
   14
@@ -235,3 +247,9 @@ let paragraphs = "";
     pelo restante da quantidade de pessoas que curtiram o post (além das duas  
     pessoas já mencionadas no início da mensagem).
 */
+
+const names = "";
+
+const likedPosts = (array = ["Raíza", "Daniela"]) => {
+  return (names += array)
+};
