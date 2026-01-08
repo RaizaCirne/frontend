@@ -246,3 +246,21 @@ section.innerHTML = paragraphs;
     pelo restante da quantidade de pessoas que curtiram o post (além das duas  
     pessoas já mencionadas no início da mensagem).
 */
+
+const likedPosts = (array = []) => {
+  if (array.length === 0) {
+    return `Ninguém curtiu isso`;
+  } else if (array.length === 1) {
+    return `${array[0]} curtiu isso`;
+  } else if (array.length === 2) {
+    return `${array[0]} e ${array[1]} curtiram isso`;
+  } else if (array.length === 3) {
+    return `${array[0]}, ${array[1]} e ${array[2]} curtiram isso`;
+  } else {
+    return `${array[0]}, ${array[1]} e mais ${
+      array.length - 2
+    } pessoas curtiram isso`;
+  }
+};
+
+console.log(likedPosts(["Raíza", "Daniela", "Marcos"]));

@@ -248,8 +248,24 @@ section.innerHTML = paragraphs;
     pessoas já mencionadas no início da mensagem).
 */
 
-const names = "";
+const getLikesMessage = (names = []) => {
+  const firstName = names[0];
+  const secondName = names[1];
+  const thirdName = names[2];
+  const totalNamesMinusTwo = names.length - 2;
 
-const likedPosts = (array = ["Raíza", "Daniela"]) => {
-  return (names += array)
+  switch (names.length) {
+    case 0:
+      return `Ninguém curtiu isso`;
+    case 1:
+      return `${firstName} curtiu isso`;
+    case 2:
+      return `${firstName} e ${secondName} curtiram isso`;
+    case 3:
+      return `${firstName}, ${secondName} e ${thirdName} curtiram isso `;
+    default:
+      return `${firstName}, ${secondName} e mais ${totalNamesMinusTwo} pessoas curtiram isso`;
+  }
 };
+
+console.log(getLikesMessage(["Roger", "Cristian", "Edson", "Matheus"]));
