@@ -10,6 +10,19 @@
   - Exiba o objeto no console.
 */
 
+let cat = {
+  name: "Olavinho",
+  age: 10,
+  color: "Branco",
+  bestFriends: ["Tom", "Jarry"],
+  sound: function () {
+    console.log("Miau");
+  },
+};
+
+console.log(cat);
+console.log(cat.sound());
+
 /*
   02
 
@@ -68,13 +81,18 @@
   - Como você refatoraria esta função?
 */
 
-const isAnSUV = car => {
-  if (car === 'Honda HR-V' || car === 'Jeep Renegade' || car === 'Ford EcoSport' || car === 'Hyundai iX35') {
-    return true
+const isAnSUV = (car) => {
+  if (
+    car === "Honda HR-V" ||
+    car === "Jeep Renegade" ||
+    car === "Ford EcoSport" ||
+    car === "Hyundai iX35"
+  ) {
+    return true;
   }
 
-  return false
-}
+  return false;
+};
 
 // console.log(isAnSUV('Honda Civic'))
 // console.log(isAnSUV('Ford EcoSport'))
