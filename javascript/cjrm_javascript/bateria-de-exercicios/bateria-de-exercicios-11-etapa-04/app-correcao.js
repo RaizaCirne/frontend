@@ -71,7 +71,9 @@ let car = {
   },
   getColorsMessage() {
     const lastItem = this.colors[this.colors.length - 1];
-    const colors = this.colors.join(", ").replace(lastItem, `e ${lastItem}`);
+    const colors = this.colors
+      .join(", ")
+      .replace(`, ${lastItem}`, ` e ${lastItem}`);
 
     return `O ${this.name} está disponível nas cores ${colors}`;
   },
