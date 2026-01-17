@@ -1,8 +1,8 @@
 // o objeto Math
 
 console.log(Math);
-console.log(Math.PI);
-console.log(Math.E);
+console.log(Math.PI); // obtem valor da constante PI 
+console.log(Math.E); // obtem a base dos logaritmos naturais
 
 const area = 7.7;
 
