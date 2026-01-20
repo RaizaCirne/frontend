@@ -73,13 +73,24 @@ const youtubeUser = {
     },
     country: "Brasil",
   },
+  logMessage() {
+    console.log(`Vídeos recentes de ${this.name}:`);
+
+    this.videos.recentVideos.forEach((video) => {
+      console.log(`${video.title}`);
+    });
+  },
 };
+
+youtubeUser.logMessage();
 
 /*
   03
 
   - Exiba o valor do PI no console.
 */
+
+console.log(Math.PI);
 
 /*
   04
@@ -89,6 +100,7 @@ const youtubeUser = {
 */
 
 const firstNumber = 8.3;
+console.log(Math.ceil(firstNumber));
 
 /*
   05
@@ -98,6 +110,7 @@ const firstNumber = 8.3;
 */
 
 const secondNumber = 3.5;
+console.log(Math.round(secondNumber));
 
 /*
   06
@@ -107,6 +120,7 @@ const secondNumber = 3.5;
 */
 
 const thirdNumber = 8.9;
+console.log(Math.floor(thirdNumber));
 
 /*
   07
@@ -115,6 +129,7 @@ const thirdNumber = 8.9;
 */
 
 const fourthNumber = 5.5;
+console.log(Math.trunc(fourthNumber));
 
 /*
   08
@@ -122,3 +137,5 @@ const fourthNumber = 5.5;
   - A cada vez que o index.html for carregado, exiba no console um número  
     aleatório de 0 à 10, incluindo 0 e 10.
 */
+
+console.log(Math.round(randomNumber * 10));
