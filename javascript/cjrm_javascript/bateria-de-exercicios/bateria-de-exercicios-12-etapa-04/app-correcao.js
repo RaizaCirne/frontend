@@ -27,12 +27,14 @@ const best2019Movies = [
   { title: "A Vida Invisível", directedBy: "Karim Aïnouz" },
 ];
 
-let message = "";
-message = `Segundo o site Omelete, os melhores filmes de 2019 são:`;
+let message = "Segundo o site Omelete, os melhores filmes de 2019 são:";
 
-best2019Movies.forEach((movie) => {
-  message += ` ${movie.title}, dirigido por ${movie.directedBy}\n`;
-});
+const generateMovieMessage = (movie) => {
+  message += `
+  - ${movie.title}, dirigido por ${movie.directedBy}`;
+};
+
+best2019Movies.forEach(generateMovieMessage);
 
 console.log(message);
 
