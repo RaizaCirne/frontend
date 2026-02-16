@@ -42,7 +42,7 @@ const myBirthYear = 1993;
 06 - Declare uma const "currentYear", que recebe o ano atual, com 4 dígitos.
 */
 
-const currentYear = 2025;
+const currentYear = 2026;
 
 /*
 07 - Exiba as const "myBirthYear" e "currentYear", lado a lado, no console do browser.
@@ -63,7 +63,6 @@ acontece.
 */
 
 const myAge = currentYear - myBirthYear;
-
 console.log(myAge);
 
 /*
@@ -81,7 +80,6 @@ matemáticas e strings (textos) em breve =)
 */
 
 const ten = 10;
-
 console.log(`Em ${currentYear + ten}, estarei com ${myAge + ten} anos.`);
 
 /*
@@ -98,6 +96,6 @@ da const myBirthYear;
 - Cole as duas linhas de código no console, pressione enter, feche o console e  
 veja o que acontece.
 
-document.querySelector('#birthYear').value = SEU_ANO_DE_NASCIMENTO
+document.querySelector('#birthYear').value =  myBirthYear;
 document.querySelector('.formButton').click()
 */
