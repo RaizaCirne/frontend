@@ -110,8 +110,9 @@ apenas as letras iniciais dos nomes do array "dogNames";
 - Exiba a "initials" no console.
 */
 
+// OBS: Usando a notação de colchetes o código fica mais enxuto do que usando o método slice()
 dogNames.push("Nina");
-const initials = `${dogNames[0].slice(0, 1)}${dogNames[1].slice(0, 1)}${dogNames[2].slice(0, 1)}${dogNames[3].slice(0, 1)}`;
+const initials = `${dogNames[0][0]}${dogNames[1][0]}${dogNames[2][0]}${dogNames[3][0]}`;
 
 // console.log(initials);
 
@@ -140,8 +141,13 @@ constante que você criou.
 'A SOBREMESA é um doce à base de coco, tradicional na América Latina e em Angola.'
 */
 
-const dessert = `${dogNames[0].slice(3, 5)}${dogNames[1].slice(2, 4)}${dogNames[3].slice(2).replace("n", "d")}`;
+/*
+OBS: 
+1) Não tem necessidade de colocar slice(3, 5) pois quando não passamos o segundo argumento para o slice, ele entende que a partir do index 3, queremos pegar todo o restante da string. Fica slice(3) e usamos a mesma estratégia para obter as outras partes da string que precisamos. 
+2) .replace("n", "d") -> Colocar depois do fechamento da template string. Ex: `${dogNames[3].slice(2)}`.replace("n", "d");
+*/
 
+const dessert = `${dogNames[0].slice(3)}${dogNames[1].slice(2)}${dogNames[3].slice(2)}`.replace("n", "d");
 // console.log(`A ${dessert} é um doce à base de coco, tradicional na América Latina e em Angola.`);
 
 /*
