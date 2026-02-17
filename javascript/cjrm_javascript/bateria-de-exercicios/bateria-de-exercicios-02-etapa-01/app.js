@@ -60,8 +60,7 @@ const js = programmingLanguage[0] + programmingLanguage[4];
 */
 
 const mozilla = "Mozilla Developer Network";
-const mdn = mozilla.slice(0, 1) + mozilla.slice(8, 9) + mozilla.slice(18, 19);
-// const mdn = mozilla[0] + mozilla[8] + mozilla[18];
+const mdn = mozilla[0] + mozilla[8] + mozilla[18];
 
 // console.log(mdn);
 
@@ -112,7 +111,7 @@ const winterMessage = "o inverno está chegando";
 - Exiba, no console, o index do caractere "v" da "winterMessage";
 */
 
-// console.log(winterMessage[4]);
+// console.log(winterMessage.indexOf("v"));
 
 /*
 12 - Comente o console.log acima, e,
@@ -130,8 +129,6 @@ const winterMessage = "o inverno está chegando";
 */
 
 const harryPotterAuthor = "J.K. Rowling";
-// console.log(harryPotterAuthor[0] + harryPotterAuthor[1] + harryPotterAuthor[2] +
-// harryPotterAuthor[3]);
 // console.log(harryPotterAuthor.slice(0, 4));
 
 /*
@@ -203,6 +200,8 @@ episodes += 4;
 const allEpisodes = "O nº de episódios é: " + episodes;
 // console.log(allEpisodes);
 
+// OBS: Podemos concatenar string com números, e o resultato da concatenação sempre será uma string.
+
 /*
 20 - Comente o console.log acima, e,
 
@@ -212,7 +211,7 @@ const allEpisodes = "O nº de episódios é: " + episodes;
 - Não use template strings.
 */
 
-// const bookMessage = '\'O Conto da Aia\' é um dos livros mais vendidos da década.'
+const bookMessage = '\'O Conto da Aia\' é um dos livros mais vendidos da década.'
 // console.log(bookMessage)
 
 /*
@@ -227,9 +226,7 @@ const allEpisodes = "O nº de episódios é: " + episodes;
 */
 
 const characterName = "walter white";
-// let newName = characterName.slice(0, 1).toUpperCase() + characterName.slice(1, 6) + " " + characterName.slice(7, 8).toUpperCase() + characterName.slice(8);
-
-// let newName = characterName[0].toUpperCase() + characterName.slice(1, 6) + " " + characterName[7].toUpperCase() + characterName.slice(8);
+let newName = characterName[0].toUpperCase() + characterName.slice(1, 6) + " " + characterName[7].toUpperCase() + characterName.slice(8);
 
 // console.log(newName);
 
@@ -243,6 +240,6 @@ const characterName = "walter white";
 - Exiba a "newName" no console;
 */
 
-let newName = `${characterName[0].toUpperCase()}${characterName.slice(1, 6)} ${characterName[7].toUpperCase()}${characterName.slice(8)}`;
+newName = `${characterName[0].toUpperCase()}${characterName.slice(1, 6)} ${characterName[7].toUpperCase()}${characterName.slice(8)}`;
 
 console.log(newName);
