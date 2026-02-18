@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.card {
+  width: 340px;
+  border: 2px solid #e7e7e7;
+  border-radius: 5px;
+  margin: 40px;
+}
+
+.avatar {
+  max-width: 100%;
+}
+
+.info {
+  padding: 15px;
+}
+
+.info p {
+  margin: 15px 0 20px;
+}
+
+.list-of-skills {
+  list-style: none;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill {
+  padding: 4px 12px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.bg-lightblue {
+  background-color: lightblue;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}

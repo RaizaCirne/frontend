@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+  line-height: 1.25;
+  background: #302A6A;
+  padding: 32px;
+}
+
+section {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 32px;
+  font-weight: bold;
+  justify-content: space-between;
+  display: flex;
+}
+
+h1 {
+  font-size: 26px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+h1 span {
+  font-size: 140%;
+  line-height: 1;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+header div {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+header button {
+  font-size: 14px;
+  background-color: brown;
+  border: none;
+  padding: .8rem 1.5rem;
+}
+
+form {
+  padding: 24px;
+  background-color: #1E1E1E;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+  border-radius: 1rem;
+}
+
+main {
+  margin-bottom: 40px;
+}
+
+aside {
+  margin-bottom: 40px;
+  opacity: 75%;
+}
+
+input,
+textarea,
+button {
+  font-size: 16px;
+  padding: 8px 12px;
+  border: .1rem solid #fff;
+  border-radius: 1rem;
+  font-family: inherit;
+  color: #fff;
+  background-color: transparent;
+}
+
+input {
+  width: 12rem;
+}
+
+*::placeholder {
+  color: #999;
+}
+
+*:focus {
+  border-radius: 1rem;
+}
+
+textarea {
+  flex: 1;
+  height: 50px;
+}
+
+button {
+  font-weight: 700;
+  padding: 9px 24px;
+  cursor: pointer;
+}
+
+main ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+main li {
+  border: 1px solid #ffe8cc;
+  padding: 16px 20px;
+}
+
+aside ul {
+  font-size: 90%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+h2 + button {
+  margin-bottom: 24px;
+}
+
+aside li button {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+form button {
+  background-color: #00E5A6;
+  color: #1E1E1E;
+  border: none;
+}
+
+.song {
+  border: none;
+  border-radius: 1rem;
+  background-color: #1E1E1E;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.archivedSong {
+  margin-bottom: .6rem;
+  border: .1rem solid #fff;
+  padding: .8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.archivedSong p {
+  font-size: 1.2rem;
+}
+
+.archivedSong button {
+  border: .1rem solid #fff;
+  padding: .6rem;
+  border-radius: .8rem;
+}

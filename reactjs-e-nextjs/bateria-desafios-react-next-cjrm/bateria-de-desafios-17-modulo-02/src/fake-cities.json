@@ -1,0 +1,32 @@
+[
+  {
+    "id": 73930385,
+    "name": "Buenos Aires",
+    "country": "Argentina",
+    "notes": "Enorme variedade de coisas para ver e fazer."
+  },
+  {
+    "id": 948723984,
+    "name": "Curitiba",
+    "country": "Brasil",
+    "notes": "Cuidado com planejamento urbano, belas áreas verdes e transporte público de qualidade."
+  },
+  {
+    "id": 827477367346724,
+    "name": "Budapeste",
+    "country": "Hungria",
+    "notes": "Uma das mais belas cidades da Europa. Arquitetura de deixar qualquer um de queixo caído."
+  },
+  {
+    "id": 750392432,
+    "name": "Maringá",
+    "country": "Brasil",
+    "notes": "Qualidade de vida nota mil. Uma das cidades mais arborizadas e limpas do país."
+  },
+  {
+    "id": 674854,
+    "name": "Ushuaia",
+    "country": "Argentina",
+    "notes": "Já ouviu falar do fim do mundo? Bonita, aconchegante e gelada."
+  }
+]
